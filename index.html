@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLADYS MWANGI INTERACTIVE PAGE</title>
+    <style>
+        /* General styling for the page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f58a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Style for the header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        /* Style for buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #490dee;
+        }
+
+        /* Styling for footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1em;
+            color: #666;
+        }
+
+        /* Initial visibility for page content */
+        #page-content {
+            display: none; /* Hidden initially */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="welcome-container">
+        <p>Welcome to the interactive page!</p>
+        <button id="ok-btn">OK</button>
+    </div>
+
+    <div id="page-content">
+        <header>
+            <h1>GLADYS MWANGI INTERACTIVE PAGE</h1>
+            <p id="intro-text">This page demonstrates dynamic JavaScript functionality with animations!</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Change Text and Styles</h2>
+                <button id="change-text-btn">Change Text</button>
+                <button id="change-style-btn">Change Style</button>
+            </section>
+
+            <section>
+                <h2>Element Addition/Removal</h2>
+                <button id="add-element-btn">Add New Element</button>
+                <button id="remove-element-btn">Remove Element</button>
+                <div id="new-element-container"></div>
+            </section>
+
+            <section>
+                <h2>Interactive Input</h2>
+                <input type="text" id="user-input" placeholder="Type something...">
+                <button id="submit-btn">Submit</button>
+                <p id="output"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Created by Gladys Mwangi</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
